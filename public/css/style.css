@@ -1,0 +1,198 @@
+.fab-wrapper{
+    width: 200px;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+.jqfab-container{
+    float: right;
+    margin:10px;
+    padding: 10px;
+    list-style: none;
+}
+
+.jqfab-fab-btn{
+    cursor: pointer;
+    padding-right: 0px;
+    transition: all 0.5s;        
+}
+
+.jqfab-fab-mini-btn{
+    cursor: pointer;
+    padding-right: 11px;
+    opacity: 0;
+    height: 0px;
+    overflow: hidden;
+    transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+    
+}
+.jqfab-fab-mini-btn .tooltip:hover +p,
+.jqfab-fab-mini-btn:hover p,
+.jqfab-fab-mini-btn .jqfab-btn:hover +p {
+    opacity:0.9;        
+}
+.jqfab-fab-btn>p:hover{
+    box-shadow: none;
+    transform: rotate(360deg);
+}
+.jqfab-container:hover  .jqfab-fab-mini-btn{        
+    display: block;
+    opacity: 1;
+    height: 55px;
+}
+.jqfab-fab-btn>p:hover > .hover-hide,.jqfab-container:hover  .hover-hide{     
+    display: none;
+}    
+.jqfab-fab-btn>p:hover > .hover-show,.jqfab-container:hover  .hover-show{     
+    display: block;
+}
+.jqfab-container:hover li > .rotate{
+    box-shadow:none;
+    transform: rotate(360deg);
+}
+.jqfab-fab-mini-btn > .jqfab-btn ,.jqfab-fab-btn >.jqfab-btn ,.jqfab-fab-mini-btn > .jqfab-btn >i{
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 40px;
+    margin: 0px;
+    margin-top: 6px;
+} 
+.jqfab-fab-btn > .jqfab-btn
+{
+    transition: all 0.5s;
+    line-height: 56px;
+    width:56px;
+    height: 56px;
+}
+.jqfab-btn {
+    min-width:40px;
+    min-height:40px;
+    background:#CCC;
+    color:white;
+    border-radius: 50%;
+    float: right;
+    box-shadow: 0 0 4px rgba(0,0,0,.14), 0 4px 8px rgba(0,0,0,.28);
+    
+}
+.tooltip{
+    float: right;
+    opacity:0;
+    transition: all 0.2s ease-in;
+}
+.tooltip > span, .single-tooltip>span {
+    
+    background: rgba(230, 229, 229,0.8);
+    padding: 3px;
+    margin-right: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+}
+
+.jqfab-icon{
+    text-align: center;
+    vertical-align: middle;
+    line-height: 56px;
+}
+.jqfab-icon-mini{
+    vertical-align: middle !important;
+    line-height: 30px !important;
+}
+
+.hover-show{
+    display: none;
+}
+.bg-primary{
+    background: rgb(248, 109, 109) !important;
+}
+.bg-small{
+    background: rgb(248, 235, 116) !important;
+}
+
+
+.single-fab{    
+    /* opacity:1; */
+    transition: all 0.5s;
+}
+
+.single-fab:hover{
+    opacity: 0.9;
+}
+
+.single-fab:active{
+    opacity: 0.5;
+    
+}
+
+.single-tooltip{
+    vertical-align: middle;
+    line-height: 56px;
+    margin-top: 6px;
+    float: right;
+    opacity:0;
+    transition: all 0.2s ease-in;
+}
+.single-fab:hover .single-tooltip{
+    opacity: 1;
+}
+
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+
+    .tooltip{     
+        opacity:0.9;
+    }
+}
+
+
+/* Smartphones (portrait) ----------- */
+@media only screen
+and (max-width : 320px) {
+    .tooltip{     
+        opacity:0.9;
+    }
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px) {
+}
+
+/* iPads (landscape) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape) {
+}
+
+/* iPads (portrait) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait) {
+    
+}
+
+/* Desktops and laptops ----------- */
+@media only screen
+and (min-width : 1224px) {
+/* Styles */
+}
+
+/* Large screens ----------- */
+@media only screen
+and (min-width : 1824px) {
+/* Styles */
+}
+
+/* iPhone 4 ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+}
